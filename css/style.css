@@ -1087,7 +1087,7 @@ input[type=number] {
 }
 
 .rules__important {
-  padding-bottom: 0 !important;
+  padding-bottom: 65px !important;
 }
 
 .rules-important {
@@ -1095,8 +1095,11 @@ input[type=number] {
   margin-bottom: 33px;
 }
 
-.important-inner {
+.rules__items {
   padding-bottom: 65px;
+}
+
+.important-inner {
   border-bottom: 1px solid #F2F2F2;
 }
 
