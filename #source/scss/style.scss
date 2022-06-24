@@ -1,0 +1,531 @@
+// Файл обнуляющих стилей
+@import "./_nullstyle.scss";
+@import "./_fonts.scss";
+@import "./_global.scss";
+@import "./studio.scss";
+
+
+.apartments {
+	padding-top: 130px;
+
+	&__title {
+		font-size: 48px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 24px;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	&__calendar {
+		max-width: 760px;
+		margin: 35px auto 37px;
+	}
+
+	&__form {
+		border: 1px solid #F2F2F2;
+		border-radius: 8px;
+		background-color: #fff;
+		box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+		max-width: 760px;
+		min-height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+		padding: 7px 130px 10px 0px;
+		position: relative;
+	}
+
+	&__form-item {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		padding-left: 25px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 50px;
+			background-color: #E5E5E5;
+			right: 5px;
+			top: 10px;
+		}
+
+		&:nth-child(3)::after {
+			content: none;
+		}
+
+		&:last-child::after {
+			content: none;
+		}
+	}
+
+	&__input {
+		font-size: 22px;
+		color: #969696;
+		background-color: #fff;
+	}
+
+	&__items {
+		display: flex;
+		padding-bottom: 170px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+		border-radius: 16px;
+		transition: all 0.5s ease;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		max-width: 360px;
+		border: 1px solid #F2F2F2;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__item-img {
+
+		img {
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+
+	&__item-descr {
+		padding: 16px;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__item-title {
+		font-weight: 400;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: #255E67;
+	}
+
+	&__item-price {
+		font-size: 24px;
+		color: #000000;
+
+		span {
+			color: #3C3C3C;
+		}
+	}
+
+	&__btn {
+		background-color: transparent;
+		font-size: 22px;
+		color: #969696;
+		max-width: 150px;
+		position: relative;
+	}
+
+	&__btn-list {
+		display: none;
+		max-width: 380px;
+	}
+
+	&__btn-list--active {
+		display: block;
+		width: 100%;
+		max-height: 400px;
+		position: absolute;
+		z-index: 100;
+		top: 295px;
+		right: 340px;
+		background: #fff;
+		border: 1px solid #F2F2F2;
+		box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+		border-radius: 8px;
+		padding: 30px;
+	}
+
+	&__btn-list-item {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.btn-descr__title {
+	font-size: 20px;
+}
+
+.btn-descr__subtitle {
+	font-size: 16px;
+	color: #969696;
+}
+
+.btn-input {
+	background: transparent;
+	input {
+		max-width: 30px;
+	}
+}
+
+.item {
+	&__list {
+		display: flex;
+		font-size: 17px;
+		color: #969696;
+	}
+}
+
+.list {
+
+	&__item {
+		position: relative;
+		margin-bottom: 20px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			background-color: #969696;
+			border-radius: 100%;
+			right: -10px;
+			top: 50%;
+		}
+	}
+
+	&__item:last-child::after {
+		content: none;
+	}
+
+	&__item+&__item {
+		margin-left: 20px;
+	}
+}
+
+.label-form {
+	font-size: 18px;
+}
+
+.search__btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	display: block;
+	border-radius: 15px;
+}
+
+.datepicker {
+	border-radius: 8px;
+}
+
+.datepicker--nav-title {
+	color: #000;
+
+	i {
+		color: #000;
+	}
+}
+
+.datepicker--nav {
+	border: none;
+}
+
+.datepicker--cells .-focus- {
+	border-radius: 100%;
+}
+
+.apartments__item:nth-child(2n) {
+	margin-left: auto;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current- .-focus- {
+	border-radius: 100%;
+	background: #255E67;
+
+	&:hover {
+		background: #255E67;
+	}
+}
+
+.about {
+	padding-bottom: 150px;
+
+	&__title {
+		margin-bottom: 70px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__descr {
+		max-width: 540px;
+		font-size: 24px;
+		line-height: 150%;
+		color: #000000;
+	}
+
+	&__text+&__text {
+		margin-top: 30px;
+	}
+
+	&__images {
+		position: relative;
+		padding-right: 20px;
+	}
+
+	&__images-top {
+		position: absolute;
+		right: 0;
+		top: -90px;
+		border-top-right-radius: 8px;
+		border-top-left-radius: 430px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+
+	&__images-center {
+		margin-top: -48px;
+		border-top-left-radius: 430px;
+		border-top-right-radius: 430px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+
+	&__images-bottom {
+		position: absolute;
+		bottom: 0;
+		left: -150px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 430px;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+}
+
+.rules {
+	padding-bottom: 160px;
+
+	&__title {
+		text-align: center;
+		margin-bottom: 75px;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 40px;
+	}
+
+	&__item--active {
+		background-color: #255E67;
+		color: #fff;
+	}
+
+	&__item {
+		box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+		border-radius: 16px;
+		padding: 24px 15px 20px;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&:hover {
+			transform: translateY(-10px);
+		}
+
+		&:first-child::after {
+			content: url('../images/clock.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 15px;
+		}
+
+		&:nth-child(2)::after {
+			content: url('../images/clock.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 15px;
+		}
+
+		&:nth-child(4)::after {
+			content: url('../images/bone.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+
+		&:nth-child(5)::after {
+			content: url('../images/fire.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+
+		&:nth-child(6)::after {
+			content: url('../images/party.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+
+		&:nth-child(7)::after {
+			content: url('../images/party.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+
+		&:nth-child(8)::after {
+			content: url('../images/stars.svg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			right: 15px;
+			bottom: 10px;
+		}
+	}
+
+	&__item-title {
+		font-size: 28px;
+	}
+}
+
+
+.contacts {
+	&__container {
+		position: relative;
+	}
+
+	&__item {
+		position: absolute;
+		background-color: #fff;
+		padding: 30px 150px 30px 45px;
+		top: -500px;
+		left: 0;
+		box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+		border-radius: 16px;
+	}
+
+	&__item-title {
+		font-size: 48px;
+		margin-bottom: 24px;
+	}
+
+	&__info-box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+
+	&__info-address {
+		color: #000;
+		font-size: 24px;
+		margin-bottom: 10px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__info-phone {
+		color: #000;
+		font-size: 24px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__info-mail {
+		color: #000;
+		font-size: 24px;
+		border-bottom: 1px solid #fff;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__item-text {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	&__item-social {
+		display: flex;
+	}
+
+	&__item-link+&__item-link {
+		margin-left: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./media.scss";

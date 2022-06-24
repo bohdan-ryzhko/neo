@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'FuturaPT';
+	src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+		url('../fonts/FuturaPT-Book.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaPT-italic';
+	src: url('../fonts/FuturaPT-BookObl.woff2') format('woff2'),
+		url('../fonts/FuturaPT-BookObl.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}

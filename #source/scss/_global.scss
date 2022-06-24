@@ -1,0 +1,309 @@
+body {
+	font-family: 'FuturaPT', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #000;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.section-title {
+	font-size: 48px;
+}
+
+.menu__burger {
+
+	width: 35px;
+	border: none;
+	background-color: transparent;
+	padding: 10px 0;
+	cursor: pointer;
+	position: relative;
+	display: none;
+	z-index: 10;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: #000;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: #000;
+	}
+
+
+
+	span {
+		display: block;
+		height: 2px;
+		background-color: #000;
+	}
+}
+
+.header {
+	min-height: 80px;
+	box-shadow: 2px 6px 20px rgba(12, 27, 41, 0.08);
+	padding-top: 23px;
+	padding-bottom: 20px;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	z-index: 1000;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+	}
+
+	&__list-item {
+		border-bottom: 1px solid #fff;
+
+		a {
+			font-size: 22px;
+			color: #000;
+		}
+
+		&:hover {
+			border-bottom: 1px solid #000;
+		}
+	}
+
+	&__list-item+&__list-item {
+		margin-left: 60px;
+	}
+}
+
+.air-datepicker-cell.-selected- {
+	background: #255E67;
+	border-radius: 100%;
+
+	&:hover {
+		background: #255E67;
+	}
+}
+
+.air-datepicker-cell.-day-.-other-month-,
+.air-datepicker-cell.-year-.-other-decade- {
+	text-decoration: line-through;
+}
+
+.air-datepicker-cell {
+	&:hover {
+		border-radius: 100%;
+	}
+}
+
+.air-datepicker-body--cells {
+	font-family: 'FuturaPT', sans-serif;
+	font-size: 18px;
+}
+
+.air-datepicker-body--day-name {
+	color: #A4BABE;
+}
+
+.air-datepicker-nav--title {
+	font-family: 'FuturaPT', sans-serif;
+	color: #000;
+	font-size: 16px;
+
+	i {
+		color: #000;
+		font-size: 16px;
+	}
+}
+
+.air-datepicker-cell.-selected-.-focus- {
+	background: #255E67;
+}
+
+.air-datepicker-nav--action {
+	svg {
+		display: none;
+	}
+}
+
+.air-datepicker-nav {
+	border: none;
+}
+
+.air-datepicker {
+	position: relative;
+	padding: 30px;
+}
+
+
+
+.calendar-btn {
+	position: absolute;
+}
+
+.footer {
+	min-height: 80px;
+	position: relative;
+
+	&__inner {
+		display: flex;
+		font-size: 18px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__copy {
+		color: #424242;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		padding-left: 26px;
+		position: relative;
+
+		a {
+			color: rgb(36, 94, 103);
+
+			&:hover {
+				border-bottom: 1px solid rgb(36, 94, 103);
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 4px;
+			height: 4px;
+			left: 13px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: #424242;
+			border-radius: 100%;
+		}
+	}
+}
+
+.slick-arrow {
+	position: absolute;
+	background-color: transparent;
+	top: -58px;
+	right: 0;
+	z-index: 10;
+}
+
+.slick-prev {
+	right: 40px;
+}
+
+.slick-track {
+	min-height: 400px;
+}
+
+.line-right {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 50px;
+		background-color: #E5E5E5;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.btn-input {
+	input {
+		background: transparent;
+	}
+}
+
+
+.quantity {
+	position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.quantity input {
+	width: 45px;
+	height: 42px;
+	line-height: 1.65;
+	float: left;
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	border: 1px solid #eee;
+}
+
+.quantity input:focus {
+	outline: 0;
+}
+
+.quantity-nav {
+	float: left;
+	position: relative;
+	height: 42px;
+}
+
+.quantity-button {
+	position: relative;
+	cursor: pointer;
+	border-left: 1px solid #eee;
+	width: 20px;
+	text-align: center;
+	color: #333;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+	line-height: 1.7;
+	transform: translateX(-100%);
+	user-select: none;
+}
+
+.quantity-button.quantity-up {
+	position: absolute;
+	height: 50%;
+	top: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+	position: absolute;
+	bottom: -1px;
+	height: 50%;
+}

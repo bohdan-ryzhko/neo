@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Studio 1</title>
+  <link rel="stylesheet" href="../node_modules/air-datepicker/air-datepicker.css">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/jquery.fancybox.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="../index.html" class="logo-link">
+            <img src="../images/logo.svg" alt="">
+          </a>
+        </div>
+        <button class="menu__burger">
+          <span></span>
+        </button>
+        <nav class="header__menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#">апартаменты</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#">контакты</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="tel:79787655811">+7 (978) 765-58-11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="studio">
+    <div class="container">
+      <div class="studio__inner">
+        <div class="studio__name">
+          <h1 class="studio__title">STUDIO 1</h1>
+          <div class="studio__subtitle">г. Севастополь, ул. Пушкина</div>
+        </div>
+        <div class="studio__photo">
+          <div class="studio__photo-inner">
+            <div class="studio__photo-img">
+              <img src="../images/studio/stufio-1.jpg" alt="">
+            </div>
+            <div class="studio__photo-img">
+              <img src="../images/studio/stufio-2.jpg" alt="">
+            </div>
+            <div class="studio__photo-img">
+              <img src="../images/studio/stufio-3.jpg" alt="">
+            </div>
+            <div class="studio__photo-img">
+              <img src="../images/studio/stufio-4.jpg" alt="">
+            </div>
+            <div class="studio__photo-img">
+              <img src="../images/studio/stufio-5.jpg" alt="">
+            </div>
+          </div>
+          <button class="photo-more">Показать все фото</button>
+          <h3 class="studio__photo-title">2-х комнатная квартира</h3>
+          <ul class="item__list">
+            <li class="list__item">5 гостей</li>
+            <li class="list__item">2 спальни</li>
+            <li class="list__item">2 кровати</li>
+            <li class="list__item">2 ванных</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities">
+    <div class="container">
+      <div class="facilities__wrapper">
+        <div class="facilities__inner">
+          <div class="facilities__descr">
+            <p>
+              Дизайнерские апартаменты с высокими потолками, полами из натурального дерева. Удобные двуспальные кровати
+              и
+              качественное постельное белье, в ванных комнатах – итальянская сантехника. Выход на собственный патио с
+              газоном, где есть шезлонги и гамак
+            </p>
+          </div>
+          <div class="facilities__calendar">
+            <div class="facilities__calendar-price">
+              от 1200₽ <span>/сутки</span>
+            </div>
+            <form action="#" class="facilities__form">
+              <div class="facilities__calendar-box">
+                <div class="facilities__form-item line-right">
+                  <label class="label-form" for="arrival">Прибытие</label>
+                  <input class="facilities__input facilities__input--1" type="text" id="arrival" placeholder="Когда?">
+                </div>
+                <div class="facilities__form-item">
+                  <label class="label-form" for="departure">Выезд</label>
+                  <input class="facilities__input facilities__input--2" type="text" id="departure" placeholder="Когда?">
+                </div>
+              </div>
+              <div class="facilities__form-item center">
+                <label class="label-form facilities-label" for="guests">Количество гостей</label>
+                <input id="guests" class="facilities__btn" type="text" placeholder="Кто едет?">
+              </div>
+            </form>
+            <ul class="facilities__btn-list">
+              <div class="facilities__btn-box">
+                <div class="facilities__btn-box-info">
+                  <li class="facilities__btn-list-item">
+                    <div class="btn-descr">
+                      <div class="btn-descr__title">Взрослые</div>
+                      <div class="btn-descr__subtitle">От 13 лет</div>
+                    </div>
+                    <div class="btn-input">
+                      <input type="text" type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                  </li>
+                  <li class="facilities__btn-list-item">
+                    <div class="btn-descr">
+                      <div class="btn-descr__title">Дети</div>
+                      <div class="btn-descr__subtitle">2-12 лет</div>
+                    </div>
+                    <div class="btn-input">
+                      <input type="text" type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                  </li>
+                </div>
+                <div class="facilities__btn-box-info">
+                  <li class="facilities__btn-list-item">
+                    <div class="btn-descr">
+                      <div class="btn-descr__title">Младенцы</div>
+                      <div class="btn-descr__subtitle">младше 2 лет</div>
+                    </div>
+                    <div class="btn-input">
+                      <input type="text" type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                  </li>
+                  <li class="facilities__btn-list-item">
+                    <div class="btn-descr">
+                      <div class="btn-descr__title">Домашние животные</div>
+                    </div>
+                    <div class="btn-input">
+                      <input type="text" type="number" min="1" max="9" step="1" value="1">
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </ul>
+            <div class="facilities__btn-form">
+              <button class="facilities__form-btn">Проверить свободные даты</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="facilities__title">Какие удобства вас ждут</h3>
+        <div class="facilities__info">
+          <ul class="facilities__info-box">
+            <li class="facilities__info-box-item">Быстрый Wi-Fi</li>
+            <li class="facilities__info-box-item">Стиральная машина</li>
+            <li class="facilities__info-box-item">Постельное белье и полотенца</li>
+          </ul>
+          <ul class="facilities__info-box">
+            <li class="facilities__info-box-item">Кофемашина, чайник</li>
+            <li class="facilities__info-box-item">Посудомоечная машина</li>
+            <li class="facilities__info-box-item">Телевизор</li>
+          </ul>
+        </div>
+        <button class="facilities__btn-more">Показать все удобства</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="reviews__inner">
+        <h3 class="reviews__title">4 отзыва</h3>
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-name">Антон</div>
+            <div class="reviews__slider-item-descr">Очень хорошая квартирка, где есть все необходимое. Отличная локация,
+              прекрасная коммуникация с хозяйкой!</div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-name">Анна</div>
+            <div class="reviews__slider-item-descr">Отлично, все понравилось</div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-name">Екатерина</div>
+            <div class="reviews__slider-item-descr">Хозяйка - одна из лучших хостов,
+              с которыми я сталкивалась!
+              А квартира - уникальный вариант! С любовью сделано все, очень красиво, уютно, продуманно.
+            </div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-name">Кирилл</div>
+            <div class="reviews__slider-item-descr">Очень хорошая квартирка, где есть все необходимое. Отличная локация!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="where">
+    <div class="container">
+      <div class="where__inner">
+        <h3 class="where__title">Где вы будете</h3>
+        <div class="where__subtitle">г. Севастополь, ул. Пушкина</div>
+        <div class="where__map">
+          <iframe class="where__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85393.56267345247!2d33.533603497060824!3d44.65665319620017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409525ef659144f5%3A0xbd2da7afff4d34cc!2z0KHQtdCy0LDRgdGC0L7Qv9C-0LvRjA!5e0!3m2!1sru!2sua!4v1655747402157!5m2!1sru!2sua"
+            width="100%" height="470px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rules rules__important">
+    <div class="container important-inner">
+      <h3 class="rules-important section-title">Важная информация</h3>
+      <div class="rules__items">
+        <div class="rules__item">
+          <div class="rules__item-title">Въезд после 15:00</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Выезд до 12:00</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">При заселении оплата залоговой суммы в размере стоимости 1 ночи</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Размещение животных возможно по запросу</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Курить строго запрещено</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Не шуметь после 23:00</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Не проводить вечеринки</div>
+        </div>
+        <div class="rules__item">
+          <div class="rules__item-title">Клининг не менее, чем раз в неделю, оплата отдельно</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copy">
+          © 2022 neorental.
+        </p>
+        <ul class="footer__list">
+          <li class="footer__link">
+            <a href="#">Конфиденциальность</a>
+          </li>
+          <li class="footer__link">
+            <a href="#">Реквизиты компании</a>
+          </li>
+          <li class="footer__link">
+            <a href="tel:79787655811">+7 (978) 765-58-11</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../node_modules/air-datepicker/air-datepicker.js"></script>
+  <script src="../js/jquery.fancybox.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

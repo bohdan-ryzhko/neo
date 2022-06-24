@@ -1,0 +1,637 @@
+@import "./_nullstyle.scss";
+@import "./_fonts.scss";
+@import "./global.scss";
+
+@media (max-width: 1246px) {
+	.contacts__item {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 1180px) {
+	.facilities__descr {
+		max-width: 440px;
+	}
+}
+
+@media (max-width: 1121px) {
+	.about__inner {
+		flex-direction: column;
+	}
+
+	.about__descr {
+		max-width: none;
+	}
+
+	.about__text {
+		&:last-child {
+			margin-bottom: 130px;
+		}
+	}
+
+	.about__images {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.about__images-bottom {
+		max-width: 200px;
+		bottom: -30px;
+		left: -100px;
+	}
+
+	.rules__items {
+		grid-gap: 15px;
+	}
+
+	.rules__item-title {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.rules__items {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.rules__item {
+		&:hover {
+			transform: scale(1);
+		}
+	}
+
+	.facilities__descr {
+		max-width: 340px;
+	}
+}
+
+@media (max-width: 950px) {
+	.apartments__title {
+		font-size: 35px;
+	}
+
+	.apartments__form {
+		display: block;
+		padding-top: 20px;
+	}
+
+	.apartments__form-item {
+		margin-bottom: 20px;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	.apartments__item {
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+
+	.apartments__item-title {
+		font-size: 28px;
+	}
+
+	.item__list {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 900px) {
+
+	.menu {
+		&__burger {
+			display: block;
+			margin-left: auto;
+			margin-top: -10px;
+		}
+	}
+
+
+	.menu__list {
+		position: absolute;
+		left: 0%;
+		right: 0%;
+		background-color: #255E67;
+		display: block;
+		transform: translateY(-150%);
+		transition: all 1s ease;
+		z-index: 10;
+		padding: 20px 0;
+	}
+
+	.menu__list.menu__list--active {
+		transform: translateY(19%);
+		transition: all 0.3s ease;
+
+	}
+
+	.menu__list-item {
+		display: block;
+		text-align: center;
+		border: none;
+
+		a {
+			font-size: 30px;
+			color: #fff;
+			text-transform: capitalize;
+		}
+	}
+
+	.menu__list-item+.menu__list-item {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+
+	.studio {
+		padding-top: 210px;
+	}
+
+	.studio__photo-inner {
+		display: block;
+		text-align: center;
+	}
+
+	.studio__photo-img {
+		img {
+			border-radius: 8px;
+		}
+
+		&:not(:first-child) {
+			display: none;
+		}
+	}
+
+	.photo-more {
+		right: 150px;
+		bottom: 140px;
+	}
+
+	.facilities__descr {
+		max-width: 100%;
+		padding-bottom: 30px;
+		padding-top: 380px;
+	}
+
+	.facilities__calendar {
+		margin-bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.facilities__input {
+		min-width: 100%;
+	}
+
+	.facilities__form {
+		height: 100%;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	.facilities__calendar {
+		min-width: 100%;
+	}
+
+	.facilities__form-item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+
+	.facilities__descr {
+		padding-top: 430px;
+	}
+
+	.facilities__btn-box {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 830px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.apartments {
+		padding-bottom: 30px;
+	}
+
+	.apartments__items {
+		padding-bottom: 0;
+		overflow: auto;
+		position: relative;
+	}
+
+	.apartments__items {
+		flex-wrap: nowrap;
+		overflow: auto;
+		position: relative;
+
+		&:hover {
+			display: none;
+		}
+
+	}
+
+
+	.rules {
+		padding-bottom: 60px;
+	}
+
+	.apartments__item {
+		flex: 0 0 90%;
+	}
+
+	.map__iframe {
+		display: none;
+	}
+
+	.contacts__item {
+		padding: 20px 60px 20px 45px;
+		position: static;
+	}
+
+
+	.contacts__item-title {
+		font-size: 36px;
+	}
+
+	.contacts__info-address {
+		font-size: 17px;
+		margin-bottom: 5px;
+	}
+
+	.contacts__info-phone {
+		font-size: 17px;
+		margin-bottom: 5px;
+	}
+
+	.contacts__info-mail {
+		font-size: 17px;
+		margin-bottom: 5px;
+	}
+
+	.contacts__info-box {
+		margin-bottom: 5px;
+	}
+
+	.contacts__item-text {
+		font-size: 17px;
+		margin-bottom: 15px;
+	}
+
+	.contacts__item-link {
+		a {
+			img {
+				max-width: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.photo-more {
+		right: 120px;
+	}
+}
+
+@media (max-width: 730px) {
+
+	.footer {
+		padding-bottom: 20px;
+	}
+
+	.footer__inner {
+		min-height: 200px;
+		flex-direction: column;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.footer__list {
+		flex-direction: column;
+	}
+
+	.footer__copy {
+		padding-left: 25px;
+	}
+}
+
+@media (max-width: 710px) {
+
+	.about {
+		padding-bottom: 100px;
+	}
+
+	.rules__title {
+		margin-bottom: 55px;
+	}
+
+	.rules__items {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	.rules__item {
+		min-height: 170px;
+	}
+
+
+	.facilities__calendar-price {
+		margin-bottom: 5px;
+	}
+
+	.facilities__calendar {
+		padding: 12px 30px 20px;
+	}
+
+	.label-form {
+		font-size: 16px;
+	}
+
+	.facilities__input {
+		font-size: 16px;
+	}
+
+	.facilities__btn {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 660px) {
+	.about__images-top {
+		max-width: 100px;
+	}
+
+	.about__images-center {
+		max-width: 240px;
+	}
+
+	.about__images-bottom {
+		max-width: 150px;
+		left: -50px;
+	}
+
+	.reviews__slider-item {
+		max-width: 320px;
+	}
+
+	.reviews__slider-item-descr {
+		font-size: 17px;
+		line-height: 23px;
+	}
+
+	.reviews__slider-item-name {
+		font-size: 26px;
+		margin-bottom: 7px;
+	}
+}
+
+@media (max-width: 620px) {
+	.photo-more {
+		right: 50px;
+	}
+
+}
+
+@media (max-width: 550px) {
+	.photo-more {
+		font-size: 13px;
+		padding: 7px 15px;
+	}
+
+	.facilities__info-box-item {
+		font-size: 20px;
+	}
+
+	.reviews__slider-item {
+		max-width: 280px;
+		height: 250px;
+	}
+
+	.slick-track {
+		min-height: 300px;
+	}
+
+	.reviews__slider-item {
+		padding: 15px 25px 30px;
+	}
+}
+
+@media (max-width: 510px) {
+	.section-title {
+		font-size: 28px;
+	}
+
+	.about__title {
+		margin-bottom: 30px;
+	}
+
+	.about__descr {
+		font-size: 18px;
+	}
+
+	.air-datepicker {
+		padding: 0px;
+	}
+
+	.contacts__item {
+		padding: 20px;
+	}
+
+	.contacts__item-title {
+		font-size: 30px;
+	}
+
+	.contacts__info-address {
+		font-size: 13px;
+	}
+
+	.contacts__info-phone {
+		font-size: 13px;
+	}
+
+	.contacts__info-mail {
+		font-size: 13px;
+	}
+
+	.contacts__item-text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 490px) {
+	.facilities__descr {
+		padding-top: 335px;
+
+		p {
+			font-size: 20px;
+		}
+	}
+
+	.label-form {
+		font-size: 15px;
+	}
+
+	.facilities__input {
+		font-size: 17px;
+	}
+
+	.facilities__btn {
+		font-size: 17px;
+	}
+
+	.facilities__calendar {
+		padding: 10px 20px 32px;
+	}
+
+	.facilities__input {
+		max-width: 133px;
+	}
+
+	.btn-input {
+		max-width: 100px;
+	}
+
+	.facilities__btn-list-item {
+		max-width: 100px;
+	}
+
+	.btn-descr__title {
+		font-size: 17px;
+	}
+
+	.btn-descr__subtitle {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 460px) {
+	.rules__items {
+		grid-template-columns: repeat(8, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		overflow: auto;
+		position: relative;
+		min-height: 200px;
+	}
+
+	.rules__item {
+		flex: 0 0 90%;
+		width: 200px;
+		max-height: 100px;
+		border: 1px solid rgba(37, 94, 103, 0.3);
+	}
+
+	.rules__item-title {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.facilities__form-btn {
+		font-size: 17px;
+		padding: 16px 40px;
+	}
+}
+
+@media (max-width: 450px) {
+	.item__list {
+		font-size: 10px;
+	}
+
+	.where {
+		margin-bottom: 150px;
+	}
+
+	.where__map {
+		max-height: 370px;
+	}
+}
+
+@media (max-width: 400px) {
+	.logo-link {
+		display: block;
+		margin-top: 7px;
+
+		img {
+			max-width: 220px;
+		}
+	}
+
+	.about__images-top {
+		max-width: 70px;
+	}
+
+	.about__images-center {
+		max-width: 150px;
+	}
+
+	.about__images-bottom {
+		max-width: 80px;
+		left: -20px;
+	}
+
+	.photo-more {
+		right: 20px;
+	}
+
+	.reviews__slider-item {
+		margin-right: 15px;
+		max-width: 240px;
+		height: 200px;
+		padding: 15px 25px 30px;
+	}
+
+	.reviews__slider-item-name {
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+
+	.reviews__slider-item-descr {
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width: 380px) {
+	.studio__photo-title {
+		margin-bottom: 0;
+		font-size: 27px;
+	}
+
+	.facilities__title {
+		margin-bottom: 10px;
+		font-size: 27px;
+	}
+
+	.facilities__btn-more {
+		font-size: 20px;
+		padding: 13px 28px;
+	}
+
+	.where__map {
+		max-height: 270px;
+	}
+
+	.facilities__input {
+		max-width: 100px;
+	}
+}
+
+@media (max-width: 336px) {
+	.facilities__form-btn {
+		font-size: 15px;
+		padding: 13px 25px;
+	}
+
+	.air-datepicker {
+		max-width: 280px;
+	}
+}
+
+@media (max-width: 287px) {
+	.photo-more {
+		bottom: 165px;
+	}
+}
